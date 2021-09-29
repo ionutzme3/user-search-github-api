@@ -1,0 +1,112 @@
+:root {
+  --font-space-mono: "Space Mono", monospace;
+  
+  --primary-color: #0079FF;
+  --color-gray: #697c9a;
+  --graish-blue: #4b6a9b;
+  --very-dark-gray: #2b3442;
+  --very-light-gray: #f2f2f2;
+  --color-white: #fefefe;
+  --very-white: #ffffff;
+  --dark-graish-blue: #1e2a47;
+  --dark-blue: #141d2f;
+  --background: var(--very-light-gray);
+  --text-color: var(--very-dark-gray);
+  --text-color2: var(--graish-blue);
+  --dark-background: var(--color-white);
+  --very-dark-background: var(--very-light-gray);
+  --button-color: var(--color-gray);
+
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --background: var(--dark-blue);
+  --text-color: var(--very-white);
+  --text-color2: var(--very-white);
+  --dark-background: var(--dark-graish-blue);
+  --very-dark-background: var(--dark-blue);
+}
+}
+
+body.dark {
+  --background: var(--dark-blue);
+  --text-color: var(--very-white);
+  --text-color2: var(--very-white);
+  --dark-background: var(--dark-graish-blue);
+  --very-dark-background: var(--dark-blue);
+  --button-color: var(--very-white);
+  
+
+}
+body.light {
+  --background: var(--very-light-gray);
+  --text-color: var(--very-dark-gray);
+  --text-color2: var(--graish-blue);
+  --dark-background: var(--color-white);
+  --very-dark-background: var(--very-light-gray);
+  --button-color: var(--color-gray);
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  background: var(--background);
+}
+
+body {
+  
+  font-family: var(--font-space-mono);
+  background: var(--background);
+}
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color2);
+}
+h4 {
+  font-size: 13px;
+  color: #4b6a9b;
+  color: var(--text-color2);
+}
+p {
+  font-size: 15px;
+  color: #4b6a9b;
+  font-weight: normal;
+  line-height: 25px;
+  color: var(--text-color2);
+}
+
+a {
+  text-decoration: none;
+  color: #0079ff;
+  font-size: 16px;
+}
+
+
+
+
+

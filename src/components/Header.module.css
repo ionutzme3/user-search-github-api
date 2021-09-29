@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    
+}
+.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--button-color);
+    background: var(--background);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+}

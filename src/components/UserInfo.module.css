@@ -1,0 +1,11 @@
+.user__info {
+    padding-left: 117px;
+    margin-left: 37px;
+}
+
+@media  (max-width: 573px) {
+    .user__info {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
